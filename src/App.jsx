@@ -5,7 +5,7 @@ import CTA from './components/CTA'
 import Logo from './components/Logo'
 import LanguageToggle from './components/LanguageToggle'
 import { useLang } from './locale'
-import { copy } from './i18n'
+import { copy } from './i18n.jsx'
 
 function App() {
   const [showBooking, setShowBooking] = useState(false)
@@ -82,7 +82,17 @@ function App() {
               <input className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.name} />
               <input className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.contact} />
               <input className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.location} />
-              <textarea rows={4} className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.details}></textarea>
+              <input className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.carModel} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <select className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500">
+                  <option value="">{t.booking.needOptions.selectPrompt}</option>
+                  <option value="rinsefree">{t.booking.needOptions.rinsefree}</option>
+                  <option value="interior">{t.booking.needOptions.interior}</option>
+                  <option value="both">{t.booking.needOptions.both}</option>
+                </select>
+                <input className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.need} />
+              </div>
+              <textarea rows={4} className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:border-blue-500" placeholder={t.booking.notes}></textarea>
               <div className="flex items-center justify-end gap-2 pt-2">
                 <button type="button" onClick={() => setShowBooking(false)} className="px-4 py-2 rounded-lg border border-white/15 text-white/90 hover:bg-white/10">{t.booking.close}</button>
                 <button type="button" onClick={() => setShowBooking(false)} className="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 font-semibold">{t.booking.send}</button>

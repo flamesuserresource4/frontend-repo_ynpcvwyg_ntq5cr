@@ -44,7 +44,7 @@ export default function Hero({ onOpenBooking, lang = 'sv' }) {
             className="flex-1 w-full"
           >
             <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-4 sm:p-6 shadow-2xl">
-              <div className="aspect-[16/10] rounded-xl bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center" />
+              <div className="aspect-[16/10] rounded-xl bg-[url('https://images.unsplash.com/photo-1629380321590-3b3f75d66dec?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90dGVyeSUyMGhhbmRtYWRlfGVufDB8MHx8fDE3NjM1MTI1ODN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80')] bg-cover bg-center" />
               <div className="absolute -inset-4 -z-10 blur-2xl opacity-40 bg-[radial-gradient(circle_at_50%_50%,#60a5fa,transparent_40%)]" />
             </div>
           </motion.div>
