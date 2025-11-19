@@ -3,7 +3,75 @@
 > vite
 
 
-  VITE v5.4.20  ready in 261 ms
+  VITE v5.4.20  ready in 313 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.5.157:3000/
+5:49:53 PM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+5:49:53 PM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+5:49:53 PM [vite] Pre-transform error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+5:49:53 PM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/locale.js:8:79
+  6  |    const [lang, setLang] = useState('sv')
+  7  |    const value = useMemo(() => ({ lang, setLang }), [lang])
+  8  |    return <LangContext.Provider value={value}>{children}</LangContext.Provider>
+     |                                                                                ^
+  9  |  }
+  10 |  
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+5:50:23 PM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/locale.js:8:79
+  6  |    const [lang, setLang] = useState('sv')
+  7  |    const value = useMemo(() => ({ lang, setLang }), [lang])
+  8  |    return <LangContext.Provider value={value}>{children}</LangContext.Provider>
+     |                                                                                ^
+  9  |  }
+  10 |  
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
+
+Could not open locale.js in the editor.
+The editor process exited with an error: spawn vi ENOENT ('vi' command does not exist in 'PATH').
+
+
+Could not open locale.js in the editor.
+The editor process exited with an error: spawn vi ENOENT ('vi' command does not exist in 'PATH').
+
+
+Could not open locale.js in the editor.
+The editor process exited with an error: spawn vi ENOENT ('vi' command does not exist in 'PATH').
+
+
+Could not open locale.js in the editor.
+The editor process exited with an error: spawn vi ENOENT ('vi' command does not exist in 'PATH').
+
+
+Could not open dep-D_zLpgQd.js in the editor.
+The editor process exited with an error: spawn vi ENOENT ('vi' command does not exist in 'PATH').
+
+5:51:19 PM [vite] Internal server error: Failed to parse source for import analysis because the content contains invalid JS syntax. If you are using JSX, make sure to name the file with the .jsx or .tsx extension.
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/locale.js:8:79
+  6  |    const [lang, setLang] = useState('sv')
+  7  |    const value = useMemo(() => ({ lang, setLang }), [lang])
+  8  |    return <LangContext.Provider value={value}>{children}</LangContext.Provider>
+     |                                                                                ^
+  9  |  }
+  10 |  
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64258:14)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)

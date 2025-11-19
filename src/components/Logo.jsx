@@ -1,4 +1,5 @@
-export default function Logo({ className = "", withText = true, brand = "Öresund Auto Detail" }) {
+export default function Logo({ className = "", withText = true, brand = "Öresund Auto Detail", lang = 'sv' }) {
+  const tagline = lang === 'sv' ? 'Sköljfri • Interiör • Mobil' : 'Rinse-free • Interior • Mobile'
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       {/* Droplet + sparkle mark */}
@@ -16,7 +17,7 @@ export default function Logo({ className = "", withText = true, brand = "Öresun
       {withText && (
         <div className="leading-tight">
           <div className="text-white font-bold tracking-tight text-lg">{brand}</div>
-          <div className="text-xs text-blue-200/80 -mt-0.5">Sköljfri • Interiör • Mobil</div>
+          <div className="text-xs text-blue-200/80 -mt-0.5">{tagline}</div>
         </div>
       )}
     </div>

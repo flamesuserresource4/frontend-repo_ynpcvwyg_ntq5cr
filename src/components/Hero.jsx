@@ -2,8 +2,9 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Logo from './Logo'
 
-export default function Hero({ onOpenBooking }) {
+export default function Hero({ onOpenBooking, lang = 'sv' }) {
   const [zip, setZip] = useState("")
+  const isSv = lang === 'sv'
 
   return (
     <section className="relative overflow-hidden">
@@ -16,22 +17,24 @@ export default function Hero({ onOpenBooking }) {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <Logo className="mb-6" />
+            <Logo className="mb-6" lang={lang} />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1]">
-              Mobil bilvård i Helsingborg, Skåne
+              {isSv ? 'Mobil bilvård i Helsingborg, Skåne' : 'Mobile car care in Helsingborg, Skåne'}
             </h1>
             <p className="mt-5 text-lg text-blue-100 max-w-2xl">
-              Specialist på sköljfria tvättar och interiördetailing. Vi kommer till dig — hemma eller på jobbet — med miljövänliga produkter och proffsigt resultat.
+              {isSv
+                ? 'Specialist på sköljfria tvättar och interiördetailing. Vi kommer till dig — hemma eller på jobbet — med miljövänliga produkter och proffsigt resultat.'
+                : 'Specialist in rinse-free washes and interior detailing. We come to you — at home or work — with eco-friendly products and professional results.'}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <button onClick={onOpenBooking} className="inline-flex items-center justify-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 shadow-lg shadow-blue-500/20 transition">
-                Få offert
+                {isSv ? 'Få offert' : 'Get quote'}
               </button>
               <a href="#services" className="inline-flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3 border border-white/20 backdrop-blur transition">
-                Visa tjänster
+                {isSv ? 'Visa tjänster' : 'View services'}
               </a>
             </div>
-            <div className="mt-6 text-sm text-blue-200/90">Vi kör i Helsingborg, Höganäs, Landskrona, Ängelholm</div>
+            <div className="mt-6 text-sm text-blue-200/90">{isSv ? 'Vi kör i Helsingborg, Höganäs, Landskrona, Ängelholm' : 'We cover Helsingborg, Höganäs, Landskrona, Ängelholm'}</div>
           </motion.div>
 
           <motion.div
