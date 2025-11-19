@@ -41,7 +41,7 @@ function App() {
       <section id="about" className="relative">
         <div className="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
           <div className="rounded-2xl border border-white/10 bg-slate-800/50 p-6">
-            <div className="aspect-[16/10] rounded-lg bg-[url('https://images.unsplash.com/photo-1629380321590-3b3f75d66dec?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90dGVyeSUyMGhhbmRtYWRlfGVufDB8MHx8fDE3NjM1MTI1ODN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80')] bg-cover bg-center" />
+            <div className="aspect-[16/10] rounded-lg bg-[url('https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center" />
           </div>
           <div>
             <h2 className="text-3xl font-bold">{t.about.title}</h2>
