@@ -1,25 +1,25 @@
 export default function Services() {
   const tiers = [
     {
-      name: "Rinseless Wash",
-      price: "from 499 SEK",
+      name: "Sköljfri tvätt",
+      price: "från 499 kr",
       time: "~60 min",
-      desc: "Safe, eco‑friendly wash with minimal water. Perfect for regular upkeep.",
-      points: ["Pre‑spray & gentle wash method", "Wheels & door jambs", "Dry & quick sealant"],
+      desc: "Skonsam, miljövänlig tvätt med minimal vattenåtgång. Perfekt för regelbundet underhåll.",
+      points: ["Förspray & skonsam tvättmetod", "Fälgar & dörrgångar", "Tork & snabbförsegling"],
     },
     {
-      name: "Interior Refresh",
-      price: "from 899 SEK",
+      name: "Interiörfräsch",
+      price: "från 899 kr",
       time: "~120 min",
-      desc: "Deep vacuum, surfaces cleaned and dressed. Streak‑free glass.",
-      points: ["Vacuum & brush work", "Plastics cleaned & dressed", "Glass inside & out"],
+      desc: "Noggrann dammsugning, ytor rengörs och dressas. Rena rutor utan ränder.",
+      points: ["Dammsugning & borstning", "Plast/vinyl rengörs & dressas", "Glas inne & ute"],
     },
     {
-      name: "Complete Inside+Out",
-      price: "from 1399 SEK",
+      name: "Komplett Inne + Ute",
+      price: "från 1399 kr",
       time: "~180 min",
-      desc: "Rinseless exterior + thorough interior for a like‑new feel.",
-      points: ["Exterior rinseless wash", "Interior refresh", "Tyre shine & final wipe"],
+      desc: "Sköljfri utsida + grundlig insida för en nästan nykänsla.",
+      points: ["Sköljfri exteriör", "Interiörfräsch", "Däckglans & slutfinish"],
       featured: true,
     },
   ]
@@ -27,8 +27,8 @@ export default function Services() {
   return (
     <section id="services" className="relative">
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center">Popular Services</h2>
-        <p className="mt-3 text-blue-100 text-center">Transparent pricing. Final quote depends on size and condition.</p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center">Populära tjänster</h2>
+        <p className="mt-3 text-blue-100 text-center">Tydliga startpriser. Slutligt pris beror på storlek och skick.</p>
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tiers.map((t) => (

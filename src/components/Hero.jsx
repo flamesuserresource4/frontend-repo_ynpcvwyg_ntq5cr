@@ -18,20 +18,20 @@ export default function Hero({ onOpenBooking }) {
           >
             <Logo className="mb-6" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1]">
-              Mobile Detailing in Helsingborg, Skåne
+              Mobil bilvård i Helsingborg, Skåne
             </h1>
             <p className="mt-5 text-lg text-blue-100 max-w-2xl">
-              Specialist in rinseless washes and interior detailing. We come to you — home or office — with eco‑friendly products and professional results.
+              Specialist på sköljfria tvättar och interiördetailing. Vi kommer till dig — hemma eller på jobbet — med miljövänliga produkter och proffsigt resultat.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <button onClick={onOpenBooking} className="inline-flex items-center justify-center rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 shadow-lg shadow-blue-500/20 transition">
-                Get a Quote
+                Få offert
               </button>
               <a href="#services" className="inline-flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3 border border-white/20 backdrop-blur transition">
-                View Services
+                Visa tjänster
               </a>
             </div>
-            <div className="mt-6 text-sm text-blue-200/90">Serving Helsingborg, Höganäs, Landskrona, Ängelholm</div>
+            <div className="mt-6 text-sm text-blue-200/90">Vi kör i Helsingborg, Höganäs, Landskrona, Ängelholm</div>
           </motion.div>
 
           <motion.div
